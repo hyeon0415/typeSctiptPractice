@@ -29,6 +29,7 @@ const player: readonly [string, number, boolean] = ["nico", 1, true]
 // player[0] = "hi"
 
 function hello() {
+    // return 값이 없는 void 
     console.log('x');
 }
 
