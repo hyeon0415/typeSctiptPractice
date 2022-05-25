@@ -37,3 +37,17 @@ const add3:Add3 = (a, b, c?:number) => {
     if(c) return a + b + c 
     return a + b
 }
+
+
+//polymorphism 다형성 
+
+type SuperPrint = {
+    <T>(arr: T[]):T
+}
+
+const  superPrint: SuperPrint = (arr) => arr[0]
+
+const a2 = superPrint([1, 2, 3, 4])
+const b = superPrint([true, false, true])
+const c = superPrint(["a", "b", "c"])
+const d = superPrint([1, 2, true, false])
