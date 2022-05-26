@@ -41,13 +41,46 @@ const add3:Add3 = (a, b, c?:number) => {
 
 //polymorphism 다형성 
 
-type SuperPrint = {
-    <T>(arr: T[]):T
+// type SuperPrint = <T, M>(a: T[], b:M) => T
+//type SuperPrint = <T>(a: T[]) => T
+
+//const  superPrint: SuperPrint = (arr) => arr[0]
+function superPrint<T>(a: T[]) {
+    return a[0]
 }
 
-const  superPrint: SuperPrint = (arr) => arr[0]
+//const  superPrint: SuperPrint = (arr) => arr[0]
 
 const a2 = superPrint([1, 2, 3, 4])
 const b = superPrint([true, false, true])
 const c = superPrint(["a", "b", "c"])
 const d = superPrint([1, 2, true, false])
+
+// generic 예시 
+type Player2<E> = {
+    name:string
+    extraInfo:E
+}
+
+type NicoExtra = {
+    favFood:string
+}
+
+type NicoPlayer = Player2<NicoExtra>
+
+const nico2: Player2<{favoriteFood:string}> = {
+    name:"nico",
+    extraInfo: {
+        favoriteFood:"kimchi"
+    }
+}
+
+const lynn:Player2<null> = {
+    name:"lynn",
+    extraInfo:null
+}
+
+
+type A = Array<number>
+
+let a3:A = [1, 2, 3, 4, 5]
