@@ -21,10 +21,11 @@ class Player3 extends User {
 const nico3 = new Player3("nico", "las", "니꼬")
 
 //hashMap 
+// 제한된 양의 property 
+// propertydp 에 대해 미리 알진 못하지만 타입은 알고 있을 때 
 type Words = {
     [key:string]: string 
 }
-
 
 class Dict {
     private words: Words
@@ -32,24 +33,24 @@ class Dict {
         this.words = {}
     }
     add(word:Word){
-        if(this.words[word.term] === undefined){
-            this.words[word.term] === word.def;
-        }
+        if(this.words[word.term] === undefined)
+        this.words[word.term] = word.def;
     }
-    def(term){
-        return this.words
+    def(term:string){
+        return this.words[term];
     }
 }
 
 class Word {
     constructor(
         public term:string,
-        public def:string 
+        public def: string 
     ){}
 }
 
 const kimchi = new Word("kimchi", "한국의 음식");
 
 const dict = new Dict()
+
 dict.add(kimchi);
 dict.def("kimchi");
