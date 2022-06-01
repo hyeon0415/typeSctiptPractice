@@ -37,3 +37,43 @@ makeUser({
     fullName: () => "xx",
     sayHi: (name) => "string" 
 })
+
+
+
+
+type PlayerA = {
+    name:string 
+}
+type PlayerAA = PlayerA & {
+    lastName:string 
+}
+const playerA: PlayerAA = {
+    name:"nico",
+    lastName:"xxx"
+}
+////
+interface PlayerB {
+    name:string 
+}
+interface PlayerBB extends PlayerB {
+    lastName:string 
+}
+const playerB:PlayerBB = {
+    name:"nico",
+    lastName:"xxx"
+}
+
+
+// type PlayerA = {
+//     firstName:string 
+// }
+
+// interface PlayerB {
+//     firstName:string 
+// }
+
+// class User implements PlayerA {
+//     constructor(
+//         public firstName:string 
+//     ){}
+// }
