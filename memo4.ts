@@ -3,59 +3,55 @@
 // type Friends = Array<string>
 
 // type Player4 = {
-//     nickname:string,
-//     healthbar: number,
-
+//     nickName:string,
+//     healthbar:number
 // }
 
 // const nico4 : Player4 = {
-//     nickname:"nico",
+//     nickName:"nico",
 //     healthbar:10
 // }
 
-// type Food = string;
+// type Food = string
 
 // const kimchi2:Food = "delecious";
 
-// //keyword
-// type Team = "read" | "blue" | "yello"
+// //keyWord 
+// type Team = "read" | "blue" | "yellow"
 // type Health2 = 1 | 5 | 10 
 
 // interface Person {
-//     nickname:string,
+//     nickName:string,
 //     team:Team,
-//     health: Health
+//     health:Health2
 // }
 
 // type Player5 = {
-//     nickName:string,
-//     team:Team,
-//     health:Health
+//     nickName:string 
 // }
 
-// // const nico: Player = {
-// //     nickname:"nico",
-// //     team:"yello",
-// //     health: 10 
-// // }
+// const nico5:Person = {
+//     nickName:"nico",
+//     team:"yellow",
+//     health: 10 
+// }
 
+// type이 좀 더 유연함 
 
-// // type이 좀 더 유연함, interface는 보여주려는 정보만 딱 보여줌 
+// interface User {
+//     name:string 
+// }
 
-// // interface User {
-// //     name:string 
-// // }
+// interface User {
+//     lastName:string 
+// }
 
-// // interface User {
-// //     lastname:string 
-// // }
+// interface User {
+//     health:number
+// }
 
-// // interface User {
-// //     health: number
-// // }
-
-// // const nico: User = {
-// //     name:"nici",
-// //     lastname="la",
-// //     health:10
-// // }
+// const nico5:User = {
+//     name:"nico",
+//     lastName:"las",
+//     health:10 
+// }
