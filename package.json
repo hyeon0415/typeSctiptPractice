@@ -1,0 +1,23 @@
+{
+  "name": "typesctiptpractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyeon0415/typeSctiptPractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyeon0415/typeSctiptPractice/issues"
+  },
+  "homepage": "https://github.com/hyeon0415/typeSctiptPractice#readme",
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
+}

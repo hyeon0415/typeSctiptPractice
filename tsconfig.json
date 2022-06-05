@@ -1,0 +1,10 @@
+{
+    // src안에 모든 파일을 ts가 확인함 
+    "include": ["src"],
+    // 자바 스크립트 파일이 생성될 디렉토리를 지정 
+    "compilerOptions": {
+        "outDir":"build",
+        // 어떤 버전의 자바스크립트로 컴파일할거냐 
+        "target": "ES6"
+    }
+}
