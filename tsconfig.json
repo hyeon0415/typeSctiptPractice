@@ -5,6 +5,10 @@
     "compilerOptions": {
         "outDir":"build",
         // 어떤 버전의 자바스크립트로 컴파일할거냐 
-        "target": "ES6"
+        "target": "ES6",
+        // 브라우저가 어떤 환경에서 작동되는지 
+        "lib": ["ES6", "DOM"],
+        // 실수를 잡아주는 역할 
+        "strict": true
     }
 }
