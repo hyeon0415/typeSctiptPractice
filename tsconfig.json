@@ -9,6 +9,7 @@
         // 브라우저가 어떤 환경에서 작동되는지 
         "lib": ["ES6", "DOM"],
         // 실수를 잡아주는 역할 
-        "strict": true
+        "strict": true,
+        "allowJs": true
     }
 }
